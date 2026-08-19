@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://b03mibrssshgl"]
+
+[ext_resource type="Script" uid="uid://eydpews7s724" path="res://scenes/debug/debug_panel.gd" id="1_426e4"]
+
+[node name="DebugPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_426e4")
+
+[node name="DebugLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="UpdateTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="UpdateTimer" to="." method="_on_update_timer_timeout"]

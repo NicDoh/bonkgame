@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk4yfayu3jttv"]
+
+[ext_resource type="Script" uid="uid://c0mwbcgtiv3qr" path="res://scenes/town.gd" id="1_f2a5t"]
+[ext_resource type="PackedScene" uid="uid://b4p57q72wy4y8" path="res://scenes/buildings/mine.tscn" id="1_gt07c"]
+
+[node name="Town" type="Node2D"]
+script = ExtResource("1_f2a5t")
+
+[node name="Mine" parent="." instance=ExtResource("1_gt07c")]

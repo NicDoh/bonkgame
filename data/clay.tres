@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3 uid="uid://djhtifrd52s14"]
+
+[ext_resource type="Script" uid="uid://doonlqsqffbpb" path="res://resources/item_data.gd" id="1_yjr5l"]
+
+[resource]
+script = ExtResource("1_yjr5l")
+item_name = "Clay"
+description = "lorteler"
+stackable = true
+metadata/_custom_type_script = "uid://doonlqsqffbpb"

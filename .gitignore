@@ -1,0 +1,14 @@
+# Godot auto-generated cache — never commit
+.godot/
+
+# Android export
+/android/
+
+# Import metadata — regenerated automatically
+*.uid
+
+# macOS
+.DS_Store
+
+# Export presets (may contain signing credentials)
+export_presets.cfg

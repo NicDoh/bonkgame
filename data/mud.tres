@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3 uid="uid://c0o1llxgdwros"]
+
+[ext_resource type="Script" uid="uid://doonlqsqffbpb" path="res://resources/item_data.gd" id="1_kt72e"]
+
+[resource]
+script = ExtResource("1_kt72e")
+item_name = "Mud"
+description = "lortemudder"
+stackable = true
+metadata/_custom_type_script = "uid://doonlqsqffbpb"

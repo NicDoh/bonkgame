@@ -1,0 +1,17 @@
+{
+	"1": {
+		"drops": {"Mud": 1.0},
+		"upgrade_cost": {"Mud": 10}
+	},
+	"2": {
+		"drops": {"Mud": 0.9, "Clay": 0.1},
+		"upgrade_cost": {"Mud": 50, "Clay": 5}
+	},
+	"3": {
+		"drops": {"Mud": 0.8, "Clay": 0.2},
+		"upgrade_cost": {"Mud": 200, "Clay": 40}
+	},
+	"4": {
+		"drops": {"Mud": 0.7, "Clay": 0.25, "Coal": 0.05}
+	}
+}
