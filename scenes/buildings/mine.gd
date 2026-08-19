@@ -3,6 +3,7 @@ extends ResourceBuilding
 func _ready() -> void:
 	load_drop_table()
 	EventBus.building_level_changed.connect(_on_building_level_changed)
+	EventBus.upgrade_requested.connect(upgrade)
 
 func load_drop_table() -> void:
 	var data = JSON.parse_string(FileAccess.get_file_as_string("res://data/mine_data.json"))
@@ -37,7 +38,10 @@ func upgrade() -> void:
 
 func can_afford_upgrade() -> bool:
 	var data = JSON.parse_string(FileAccess.get_file_as_string("res://data/mine_data.json"))
-	var cost = data[str(level)]["upgrade_cost"]
+	var level_data = data[str(level)]
+	if not level_data.has("upgrade_cost"):
+		return false
+	var cost = level_data["upgrade_cost"]
 	for item in cost:
 		if Inventory.item.get(item, 0) < cost[item]:
 			return false

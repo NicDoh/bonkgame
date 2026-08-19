@@ -6,6 +6,12 @@ func _ready() -> void:
 	SaveManager.load()
 	$Mine.start_producing()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _on_mine_texture_button_pressed() -> void:
+	var screen = preload("res://scenes/buildings/mine_screen.tscn").instantiate()
+	add_child(screen)
+
+#-----------debug-----------------
+func _input(event: InputEvent) -> void:
+	if event is InputEventKey and event.pressed and event.keycode == KEY_F5:
+		SaveManager.reset()
+		get_tree().reload_current_scene()

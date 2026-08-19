@@ -40,3 +40,9 @@ func load() -> void:
 
 func _on_building_level_changed(building_name: String, level: int) -> void:
 		buildings[building_name] = level
+
+#---------------debugging--------------------
+func reset() -> void:
+	Inventory.item = {}
+	buildings = {}
+	save()
