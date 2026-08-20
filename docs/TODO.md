@@ -46,6 +46,7 @@
 
 ## Later phases (do not implement yet)
 
+- Add HP bar and XP bar to character profile button (after combat system exists)
 - Combat foundation
 - Loot system
 - Crafting and refining

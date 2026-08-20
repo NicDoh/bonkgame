@@ -889,6 +889,31 @@ reactively.
 
 ---
 
+# 21. Inventory Access
+
+## D052 — Inventory Is Accessed via Character Profile
+
+**Decision:** The player's full inventory is accessed through a character profile
+button in the top left corner of the screen.
+
+The character profile is also the entry point for:
+
+- HP bar
+- XP bar
+- Character stats
+- Gear
+
+There is no permanent resource display in the town view.
+
+The character profile button sits in the top left corner only.
+The rest of the screen is free and transparent — no topbar.
+
+This decision may be revisited as the game develops.
+
+**Status:** Confirmed
+
+---
+
 # 20. Decision Changes
 
 When a confirmed decision changes, this document must be updated.

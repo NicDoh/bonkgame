@@ -16,19 +16,28 @@ grow_vertical = 2
 color = Color(0.58743906, 0.31130278, 0.18317294, 1)
 
 [node name="Label" type="Label" parent="CanvasLayer"]
-offset_left = 496.0
-offset_top = 20.0
-offset_right = 708.0
-offset_bottom = 65.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -106.0
+offset_top = 10.0
+offset_right = 106.0
+offset_bottom = 55.0
+grow_horizontal = 2
 theme_override_font_sizes/font_size = 32
 text = "Mine - Level 1"
 
 [node name="ExitButton" type="Button" parent="CanvasLayer"]
-offset_left = 1105.0
-offset_top = 20.0
-offset_right = 1136.0
-offset_bottom = 79.0
-theme_override_font_sizes/font_size = 37
+custom_minimum_size = Vector2(48, 48)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -58.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = 58.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 28
 text = "X"
 
 [node name="UpgradeButton" type="Button" parent="CanvasLayer"]

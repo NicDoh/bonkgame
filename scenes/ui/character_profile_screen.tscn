@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://chxwbf667wa17"]
+
+[ext_resource type="Script" uid="uid://ci3lcs7bpti6f" path="res://scenes/ui/character_profile_screen.gd" id="1_bvjny"]
+
+[node name="CharacterProfileScreen" type="CanvasLayer"]
+script = ExtResource("1_bvjny")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.19076231, 0.19076234, 0.19076231, 0.5686275)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -126.5
+offset_top = 10.0
+offset_right = 126.5
+offset_bottom = 54.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 32
+text = "Character Profile"
+
+[node name="ExitButton" type="Button" parent="."]
+custom_minimum_size = Vector2(48, 48)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -58.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = 58.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 28
+text = "X"
+
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

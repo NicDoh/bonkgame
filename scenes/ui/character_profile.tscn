@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://crrsxrwdxsfeu"]
+
+[ext_resource type="Script" uid="uid://cebnuh3fdjmy0" path="res://scenes/ui/character_profile.gd" id="1_bqvlp"]
+
+[node name="CharacterProfile" type="CanvasLayer"]
+script = ExtResource("1_bqvlp")
+
+[node name="Button" type="Button" parent="."]
+custom_minimum_size = Vector2(64, 64)
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 72.0
+offset_bottom = 72.0
+theme_override_font_sizes/font_size = 34
+text = "P"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
