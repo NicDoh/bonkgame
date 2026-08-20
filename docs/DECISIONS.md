@@ -914,6 +914,23 @@ This decision may be revisited as the game develops.
 
 ---
 
+## D053 — Character Profile Screen Layout
+
+**Decision:** The character profile screen is divided as follows:
+
+- **Left 1/3 (fixed):** Character sprite and name — always visible regardless of active tab
+- **Right 2/3 (tabbed):**
+  - **Gear tab:** Left half shows gear slots, right half shows gear inventory (filtered)
+  - **Inventory tab:** Full 2/3 width, scrollable inventory list
+- **Bottom strip:** Stats / info
+
+This layout keeps the character permanently visible while the right side
+switches function based on the active tab.
+
+**Status:** Confirmed
+
+---
+
 # 20. Decision Changes
 
 When a confirmed decision changes, this document must be updated.
